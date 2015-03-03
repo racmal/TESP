@@ -15,6 +15,8 @@ public class Professor extends Pessoa {
 		super(nome, cpf);
 	}
 
+	public static Double BONUS = 0.10;
+	
 	public BigDecimal getSalario() {
 		return salario;
 	}
