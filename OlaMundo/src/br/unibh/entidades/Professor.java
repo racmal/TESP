@@ -1,18 +1,23 @@
-package br.raphael;
+package br.unibh.entidades;
 
 import java.math.BigDecimal;
 
 public class Professor extends Pessoa {
 
 	private BigDecimal salario;
+	
 
-	public Professor(String nome, String cpf, BigDecimal salario) {
-		super(nome, cpf);
+	public Professor(){
+		
+	}
+	
+	public Professor(Long id, String nome, String cpf, BigDecimal salario) {
+		super(id, nome, cpf);
 		this.salario = salario;
 	}
 
-	public Professor(String nome, String cpf) {
-		super(nome, cpf);
+	public Professor(Long id, String nome, String cpf) {
+		super(id, nome, cpf);
 	}
 
 	public static Double BONUS = 0.10;

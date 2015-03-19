@@ -1,7 +1,10 @@
-package br.raphael;
+package br.unibh;
 
 import java.math.BigDecimal;
 import java.util.Date;
+
+import br.unibh.entidades.Aluno;
+import br.unibh.entidades.Professor;
 
 public class OlaMundo {
 
@@ -16,12 +19,12 @@ public class OlaMundo {
 			i++;
 		}*/
 	
-	Aluno a1 = new Aluno(11316789L, "Maria Filisbina", "12345678", new Date());
-	Aluno a2 = new Aluno(9813045L, "Golaço merece placa", "04395485890");
-	Aluno a3 = new Aluno(9813045L, "Golaço merece placa");
+	Aluno a1 = new Aluno(new Long(1), 11316789L, "Maria Filisbina", "12345678", new Date());
+	//Aluno a2 = new Aluno(9813045L, "Golaço merece placa", "04395485890");
+	//Aluno a3 = new Aluno(9813045L, "Golaço merece placa");
 	
-	Professor p1 = new Professor("Humberto Cruvinel", "982354875", new BigDecimal("9587"));
-	Professor p2 = new Professor("Humberto Cruvinel", "982354875");
+	//Professor p1 = new Professor("Humberto Cruvinel", "982354875", new BigDecimal("9587"));
+	//Professor p2 = new Professor("Humberto Cruvinel", "982354875");
 	
 	System.out.println("Bonos do professor: " + Professor.BONUS);
 	System.out.println("Bonos do professor: " + Professor.BONUS);
@@ -30,9 +33,9 @@ public class OlaMundo {
 	System.out.println("Verifica Matricula 2 ====== " + Aluno.verificaMatricula("12345678"));
 	
 	System.out.println(a1);
-	System.out.println(a2);
-	System.out.println(a3);
-	System.out.println(p1);
-	System.out.println(p2);
+	//System.out.println(a2);
+	//System.out.println(a3);
+	//System.out.println(p1);
+	//System.out.println(p2);
 	}
 }
